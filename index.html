@@ -1,32 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<!-- <html lang="fr"> -->
 
 <head>
+    <meta name="description" content="Udacity Project: Build a Portfolio" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="js/bootstrap.min.js">
-    <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Stephanie Lehuger Portfolio</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+    <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial" />
 </head>
 
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <img src="img/stephanie-picture.png" id="stephanie-picture" alt="Stephanie's picture">
+        <header class="row">
+            <div class="col-md-3">
+                <img src="img/fake-logo.jpg" id="fake-logo" alt="fake logo">
             </div>
-            <div class="col-md-6 text-right text-uppercase">
+            <div class="col-md-9 text-right text-uppercase">
                 <h1 class="title-super text-thin">Stephanie Lehuger</h1>
-                <h3>Front-end Ninja</h3>
+                <h4>Front-end Ninja</h4>
             </div>
-        </div>
+        </header>
         <div class="row">
             <div class="col-md-12">
                 <hr class="horizontal-rule">
@@ -34,99 +32,51 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <img src="https://placekitten.com/1140/350" class="img-responsive" alt="Responsive image">
+                <picture id="banner">
+                    <source media="(min-width: 768px)" srcset="img/interview-illustration-1600-large-2x.png 2x, img/interview-illustration-800-large-1x.png 1x">
+                    <source media="(min-width: 360px)" srcset="img/interview-illustration-medium.png">
+                    <img src="img/interview-illustration-small.png" alt="interview illustration">
+                </picture>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-                <h2 class="text-muted">Featured Work</h2>
+                <h2 class="text-muted">TV appearances</h2>
             </div>
         </div>
         <div class="row text-center">
-            <div class="col-md-6">
-                <img src="https://placekitten.com/555/300" class="img-responsive" alt="Responsive image" data-toggle="modal" data-target="#project1">
-                <h3 class="text-uppercase">Project #1</h3>
-                <p><a href="http://github.com/">Link to project</a></p>
-            </div>
-            <div class="col-md-6">
-                <img src="https://placekitten.com/555/300" class="img-responsive" alt="Responsive image" data-toggle="modal" data-target="#project2">
-                <h3 class="text-uppercase">Project #2</h3>
-                <p><a href="http://github.com/">Link to project</a></p>
+            <article class="col-md-4">
+                <img src="img/bloomberg.png" class="img-responsive center-block" alt="bloomberg tv interview illustration">
+                <h3 class="text-uppercase">Interview by Bloomberg Europe News TV</h3>
+                <p><em>Stephanie talks about her experience at the new computer programming school "42".</em></p>
+                <p class="discrete-font"><a class="click" href="https://www.bloomberg.com/news/videos/b/90b34a49-51fa-4b63-b99e-a1d9df95990a">Click here to watch the interview</a></p>
+            </article>
+            <article class="col-md-4">
+                <img src="img/quotidien.png" class="img-responsive center-block" alt="le quotidien tv documentary illustration">
+                <h3 class="text-uppercase">Documentary by leading French daily show</h3>
+                <p><em>Le Quotidien documentary, leading French daily show on TF1, watched by 1.2 million people.</em></p>
+                <p class="discrete-font"><a class="click" href="https://www.tf1.fr/tmc/quotidien-avec-yann-barthes/videos/paul-duan-rencontre-celui-veut-eradiquer-chomage-france.html">Click here to watch the documentary (starts at 6'28)</a></p>
+            </article>
+            <article class="col-md-4">
+                <img src="img/m6.png" class="img-responsive center-block" alt="M6 tv documentary illustration">
+                <h3 class="text-uppercase">Documentary by French TV national news</h3>
+                <p><em>TV national daily news on channel M6, watched by 2.8 million people.</em></p>
+                <p class="discrete-font"><a class="click" href="https://youtu.be/T3nkv8CbPe0">Click here to watch the documentary</a></p>
+            </article>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <br>
+                <hr class="horizontal-rule-thin">
             </div>
         </div>
-        <div class="row text-center">
-            <div class="col-md-6">
-                <img src="https://placekitten.com/555/300" class="img-responsive" alt="Responsive image" data-toggle="modal" data-target="#project3">
-                <h3 class="text-uppercase">Project #3</h3>
-                <p><a href="http://github.com/">Link to project</a></p>
+        <footer class="row text-center">
+            <div id="social">
+                <a href="https://twitter.com/stefets42" class="zocial-twitter"></a>
+                <a href="https://www.linkedin.com/in/stephanielehuger" class="zocial-linkedin"></a>
             </div>
-            <div class="col-md-6">
-                <img src="https://placekitten.com/555/300" class="img-responsive" alt="Responsive image" data-toggle="modal" data-target="#project4">
-                <h3 class="text-uppercase">Project #4</h3>
-                <p><a href="http://github.com/">Link to project</a></p>
-            </div>
-        </div>
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Project #1</h4>
-                </div>
-                <div class="modal-body">
-                    <img class="img-responsive" src="https://placekitten.com/555/300"> This was my first project in this class.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Project #2</h4>
-                </div>
-                <div class="modal-body">
-                    <img class="img-responsive" src="https://placekitten.com/555/300"> This was my second project in this class.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Project #3</h4>
-                </div>
-                <div class="modal-body">
-                    <img class="img-responsive" src="https://placekitten.com/555/300"> This was my third project in this class.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="project4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Project #4</h4>
-                </div>
-                <div class="modal-body">
-                    <img class="img-responsive" src="https://placekitten.com/555/300"> This was my fourth project in this class.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
+            <p class="text-muted discrete-font"><a class="click" href="http://stephanielehuger.strikingly.com/">&copy; 2017 Stephanie Lehuger</a></p>
+        </footer>
     </div>
 </body>
 

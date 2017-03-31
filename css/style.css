@@ -1,44 +1,79 @@
-    body {
-        font-family: 'Lato', sans-serif;
-        color: #747704;
-        font-weight: 300;
-    }
-    
-    .text-muted {
-        color: #bcbbbb;
-    }
-    
-    .text-thin {Ó
-        font-weight: 100;
-    }
-    
-    .title-super {
-        font-size: 50px;
-    }
-    
-    .horizontal-rule {
-        border: none;
-        height: 1px;
-        background-color: #d3d3d3;
-    }
-    
-    .img.resize {
-        width: 100px;
-        /* you can use % */
-        height: auto;
-    }
-    
-    #stephanie-picture {
-        margin-top: 20px;
-        filter: grayscale(100%);
-        /* IE6-9 */
-        -webkit-filter: grayscale(100%);
-        /* Google Chrome, Safari 6+ & Opera 15+ */
-    }
-    
-    #stephanie-picture:hover {
-        filter: none;
-        /* IE6-9 */
-        -webkit-filter: grayscale(0);
-        /* Google Chrome, Safari 6+ & Opera 15+ */
-    }
+[class*="zocial-"]:before {
+    color: #7d97ad;
+    display: inline-block;
+    font-family: 'zocial', sans-serif;
+    width: 2em;
+    margin: 0px 10px 10px 10px;
+}
+
+#social:hover [class*="zocial-"]:before {
+    color: #02b3e4;
+}
+
+.click:hover {
+    color: #02b3e4;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #2d3c49;
+    font-weight: 300;
+}
+
+.text-muted {
+    color: #7d97ad;
+}
+
+.text-thin {
+    font-weight: 100;
+}
+
+.title-super {
+    font-size: 50px;
+    color: #2d3c49;
+}
+
+.discrete-font {
+    color: #7d97ad;
+    font-size: 12px;
+}
+
+.horizontal-rule {
+    border: none;
+    height: 3px;
+    background-color: #7d97ad;
+}
+
+.horizontal-rule-thin {
+    border: none;
+    height: 1px;
+    background-color: #7d97ad;
+}
+
+picture#banner img {
+    max-width: 100%;
+    width: 100%;
+}
+
+
+/* How to turn color images to black and white and turn them back into color when you mouse over.\
+Method shared on Udacity forum: https: //discussions.udacity.com/t/how-to-turn-color-images-to-black-and-white-and-turn-them-back-into-color-when-you-mouse-over/231224 */
+
+#fake-logo {
+    margin-top: 20px;
+    /* IE6-9: */
+    filter: grayscale(100%);
+    /* Google Chrome, Safari 6+ & Opera 15+:; */
+    -webkit-filter: grayscale(100%);
+    height: 100px;
+    width: auto;
+}
+
+#fake-logo:hover {
+    /* IE6-9: */
+    filter: none;
+    /* Google Chrome, Safari 6+ & Opera 15+:; */
+    -webkit-filter: grayscale(0);
+}
